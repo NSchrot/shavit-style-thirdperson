@@ -143,8 +143,9 @@ public Action Command_ApplyFOV(int client, int args)
 	if (args < 1)
 	{
 		Shavit_PrintToChat(client, "\x078efeffThird-Person: \x07ffffffCurrent FOV: \x07A082FF%i \x07ffffff(Default: 90)", g_iFov[client]);
-		Shavit_PrintToChat(client, "\x078efeffThird-Person: \x07ffffffUsage: /tcfov \x07A082FF<value>");
+		Shavit_PrintToChat(client, "\x078efeffThird-Person: \x07ffffffUsage: /tpfov \x07A082FF<value>");
 		Shavit_PrintToChat(client, "\x078efeffThird-Person: \x07A082FFChanging the FOV affects mouse sensitivity!");
+		
 		return Plugin_Handled;
 	}
 
